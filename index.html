@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primeira Infância no SUAS — Material de Apoio | PAIF</title>
+<meta name="description" content="Material de apoio (não curso) sobre vulnerabilidade, risco social e intersetorialidade na primeira infância no SUAS, com base na Trilha 4 (Trabalho Social com Famílias e Territórios no PAIF).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar-title">Primeira Infância no SUAS</span>
+  <button class="topbar-toggle" id="navToggle">Sumário ☰</button>
+</div>
+
+<div class="shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <nav class="sidebar" id="sidebar" aria-label="Sumário do material">
+    <div class="brand">
+      <div class="brand-mark">PI</div>
+      <div class="brand-text">
+        <strong>Primeira Infância no SUAS</strong>
+        <span>Material de apoio · PAIF</span>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input class="search-input" id="searchInput" type="text" placeholder="Buscar um termo ou situação…">
+    </div>
+    <p class="search-hint" id="searchHint">ex.: "cuidador solo", "GPTE", "vínculos fragilizados"</p>
+
+    <p class="nav-label">Sumário</p>
+    <ul class="nav" id="navList">
+      <li data-target="marcos"><a href="#marcos"><span class="nav-dot"></span>Marcos legais</a></li>
+      <li data-target="vulnerab"><a href="#vulnerab"><span class="nav-dot"></span>Vulnerabilidade × Risco social</a></li>
+      <li data-target="dimensoes"><a href="#dimensoes"><span class="nav-dot"></span>As 4 dimensões de vulnerabilidade</a></li>
+      <li data-target="impactos"><a href="#impactos"><span class="nav-dot"></span>Impactos na primeira infância</a></li>
+      <li data-target="genero"><a href="#genero"><span class="nav-dot"></span>Gênero, raça e interseccionalidade</a></li>
+      <li data-target="gpte"><a href="#gpte"><span class="nav-dot"></span>Territórios e GPTE</a></li>
+      <li data-target="intersetorial"><a href="#intersetorial"><span class="nav-dot"></span>Intersetorialidade e desafios da rede</a></li>
+      <li data-target="fortalecer"><a href="#fortalecer"><span class="nav-dot"></span>Fortalecer a rede do território</a></li>
+      <li data-target="etapas"><a href="#etapas"><span class="nav-dot"></span>As 4 etapas de articulação</a></li>
+    </ul>
+
+    <div class="sidebar-foot">
+      O marcador ao lado de cada item indica se você já passou por aquele trecho <em>nesta sessão</em> — não é progresso salvo nem conclusão de tarefa.
+    </div>
+  </nav>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main>
+    <div class="content-col">
+
+      <div class="doc-header">
+        <p class="doc-kicker">Trabalho Social com Famílias e Territórios no PAIF</p>
+        <h1>Primeira infância e gestantes: vulnerabilidade, risco social e intersetorialidade</h1>
+        <p>Material de consulta para uso em campo — não é um curso. Use o sumário ou a busca para ir direto ao que você precisa.</p>
+      </div>
+
+      <!-- BLOCO 1 — MARCOS LEGAIS -->
+      <section class="block" id="marcos">
+        <p class="block-eyebrow">Referência rápida</p>
+        <h2>Marcos legais da primeira infância</h2>
+        <p>Base normativa que sustenta a priorização da primeira infância e das gestantes na Política de Assistência Social — para citar em relatório, parecer ou justificar um encaminhamento.</p>
+
+        <table class="ref-table">
+          <thead>
+            <tr><th>Marco</th><th>O que estabelece</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CF/1988, art. 227</td>
+              <td>Prioridade absoluta à criança, ao adolescente e ao jovem. <button class="law-link" data-modal="cf227">ver texto</button></td>
+            </tr>
+            <tr>
+              <td>ECA (Lei 8.069/1990)</td>
+              <td>Doutrina da Proteção Integral; direitos, medidas de proteção e sistema de garantias.</td>
+            </tr>
+            <tr>
+              <td>Marco Legal da Primeira Infância (Lei 13.257/2016)</td>
+              <td>Diretrizes para políticas de 0 a 6 anos; áreas prioritárias de atuação.</td>
+            </tr>
+            <tr>
+              <td>Lei da Parentalidade Positiva (2024)</td>
+              <td>Cuidado baseado no direito ao brincar e na prevenção da violência.</td>
+            </tr>
+            <tr>
+              <td>Decreto 12.574/2025</td>
+              <td>Institui a Política Nacional Integrada para a Primeira Infância.</td>
+            </tr>
+            <tr>
+              <td>Resolução CIT 30/2025</td>
+              <td>Institui o <span class="term" tabindex="0">SPSBD-GC<span class="tip">Serviço de Proteção Social Básica no Domicílio para Gestantes e Crianças de 0 a 6 anos — substitui o PCF a partir de jan/2027.</span></span>, em vigor a partir de janeiro de 2027.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="placeholder-note">[wireframe] cada linha "ver texto" abre modal com o trecho legal completo — só a primeira está funcional aqui como exemplo do padrão.</p>
+      </section>
+
+      <!-- BLOCO 2 — VULNERABILIDADE x RISCO -->
+      <section class="block" id="vulnerab">
+        <p class="block-eyebrow">Conceito-base</p>
+        <h2>Vulnerabilidade social × Risco social</h2>
+        <p>Dois conceitos que orientam toda a leitura territorial — indissociáveis, mas com implicações distintas de resposta.</p>
+
+        <div class="def-box">
+          <h3>O que é vulnerabilidade social?</h3>
+          <p>Ausência ou insuficiência de acesso a políticas públicas fundamentais, privações decorrentes da pobreza, vínculos familiares fragilizados e desigualdades interseccionais (raça/etnia, gênero, classe).</p>
+        </div>
+        <div class="def-box">
+          <h3>O que caracteriza os riscos sociais?</h3>
+          <p>Situações agravadas de violência, violação de direitos ou ruptura grave de vínculos — exigem atuação imediata e articulada com a Proteção Social Especial.</p>
+        </div>
+      </section>
+
+      <!-- BLOCO 3 — 4 DIMENSÕES (tabs) -->
+      <section class="block" id="dimensoes">
+        <p class="block-eyebrow">Quadro 1 · triagem</p>
+        <h2>As 4 dimensões de vulnerabilidade</h2>
+        <p>Use para localizar em qual dimensão uma situação observada no território se enquadra.</p>
+
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" data-tab="renda">Pobreza e renda</button>
+          <button class="tab-btn" data-tab="acesso">Acesso a direitos</button>
+          <button class="tab-btn" data-tab="cuidados">Demanda por cuidados</button>
+          <button class="tab-btn" data-tab="vinculos">Vínculos fragilizados</button>
+        </div>
+        <div class="tab-panel" id="tabPanel">
+          <p><strong>Pobreza, instabilidade de renda e insegurança material do cuidado.</strong> Desproteções materiais decorrentes da insuficiência, irregularidade ou ausência de renda.</p>
+          <p style="margin:0; color:var(--ink-soft);">Situações típicas: renda instável ou intermitente; dependência de benefícios eventuais; dificuldade de acesso a itens essenciais ao cuidado infantil.</p>
+        </div>
+      </section>
+
+      <!-- BLOCO 4 — IMPACTOS / VIOLÊNCIA -->
+      <section class="block" id="impactos">
+        <p class="block-eyebrow">Dado de referência</p>
+        <h2>Impactos na primeira infância</h2>
+        <p>Exposição precoce a vulnerabilidade e risco produz efeitos profundos e duradouros — físicos, cognitivos e socioemocionais.</p>
+        <div class="sober-note">
+          Conteúdo sensível (violência contra a infância). O UNICEF (2024) alerta que a violência física, emocional ou sexual contra crianças constitui uma crise mundial, com efeitos que incluem problemas de saúde mental e, em casos extremos, morte.
+        </div>
+        <p class="placeholder-note">[wireframe] aqui entra o infográfico estático com os dados ENANI-2019 e UNICEF — tom documental, sem elementos lúdicos.</p>
+      </section>
+
+      <!-- BLOCO 5 — GÊNERO, RAÇA -->
+      <section class="block" id="genero">
+        <p class="block-eyebrow">Leitura estrutural</p>
+        <h2>Gênero, raça e interseccionalidade</h2>
+        <p>As desigualdades de gênero, raça/etnia e classe não se organizam de forma isolada — se entrelaçam na produção das vulnerabilidades vividas pelas famílias.</p>
+        <div class="def-box">
+          <h3>Síntese</h3>
+          <p>Pensar a proteção da primeira infância exige reconhecer que racismo estrutural e patriarcado operam de forma articulada, produzindo múltiplas formas de violência sobre mulheres, crianças e populações historicamente subalternizadas.</p>
+        </div>
+        <p class="placeholder-note">[wireframe] texto completo em leitura direta (não escondido em accordion); vídeo de aprofundamento fica como ícone opcional, não como porta de entrada.</p>
+      </section>
+
+      <!-- BLOCO 6 — GPTE / BIBLIOTECA -->
+      <section class="block" id="gpte">
+        <p class="block-eyebrow">Apoio</p>
+        <h2>Territórios distantes e GPTE</h2>
+        <p>Orientações para atendimento a Grupos Populacionais Tradicionais e Específicos (indígenas, quilombolas, ribeirinhos, ciganos, migrantes, entre outros).</p>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" data-accordion="pia">
+            Cadernos Primeira Infância Antirracista (PIA)
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body"><div class="accordion-body-inner">Materiais informativos e indutores de práticas antirracistas no atendimento a gestantes e crianças negras e indígenas.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" data-accordion="indigena">
+            Trabalho Social com Famílias Indígenas
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body"><div class="accordion-body-inner">Caderno de referência para atuação do PAIF junto a famílias e comunidades indígenas.</div></div>
+        </div>
+      </section>
+
+      <!-- BLOCO 7 — INTERSETORIALIDADE -->
+      <section class="block" id="intersetorial">
+        <p class="block-eyebrow">Conceito</p>
+        <h2>Intersetorialidade e desafios do trabalho em rede</h2>
+        <p>Movimento de qualificação e reordenamento da ação estatal, superando fragmentações institucionais entre SUAS, saúde, educação e demais políticas.</p>
+        <div class="def-box">
+          <h3>Desafios do trabalho em rede</h3>
+          <p>O trabalho em rede não é automático nem isento de conflitos — envolve tensão entre práticas emancipadoras e práticas conservadoras, focalistas ou assistencialistas. Exige unidade de propósito, não apenas articulação pontual.</p>
+        </div>
+      </section>
+
+      <!-- BLOCO 8 — FORTALECER A REDE (cartões de apoio à decisão) -->
+      <section class="block" id="fortalecer">
+        <p class="block-eyebrow">Apoio à decisão · sem estado salvo</p>
+        <h2>Como fortalecer a rede do meu território?</h2>
+        <p>Sete requisitos essenciais — use como roteiro de discussão em equipe, não como lista de tarefas a concluir.</p>
+
+        <div class="support-card"><div class="mark"></div><div><strong>Governança intersetorial territorializada</strong><p>Instâncias e rotinas de coordenação no território, com responsabilidades definidas entre políticas.</p></div></div>
+        <div class="support-card"><div class="mark"></div><div><strong>Diagnóstico socioterritorial integrado</strong><p>Leitura interseccional das desproteções, evitando análises moralizantes.</p></div></div>
+        <div class="support-card"><div class="mark"></div><div><strong>Fluxos de referência e contrarreferência</strong><p>Critérios, prazos e retorno da informação entre PSB e PSE.</p></div></div>
+        <p class="placeholder-note">[wireframe] 7 cartões no total; a marcação é visual e local à sessão, sem persistência — não é um checklist de conclusão.</p>
+      </section>
+
+      <!-- BLOCO 9 — 4 ETAPAS (accordion) -->
+      <section class="block" id="etapas">
+        <p class="block-eyebrow">Quadro 2 · consulta por etapa</p>
+        <h2>As 4 etapas de efetivação da intersetorialidade</h2>
+        <p>Cada etapa pode ser consultada isoladamente — não é preciso "avançar" pelas anteriores.</p>
+
+        <div class="accordion-item open">
+          <button class="accordion-trigger" data-accordion="e1">
+            1. Leitura territorial e mapeamento de potencialidades
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body" style="max-height:300px;"><div class="accordion-body-inner">Identificação de serviços, atores comunitários e sistemas de garantia de direitos presentes no território; reconhecimento de ativos comunitários e redes de apoio informais.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" data-accordion="e2">
+            2. Ativação e pactuação da rede
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body"><div class="accordion-body-inner">Mobilização de atores institucionais e comunitários; construção de vínculos de confiança e pactuação de fluxos de referência.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" data-accordion="e3">
+            3. Planejamento e construção das intervenções
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body"><div class="accordion-body-inner">Planejamento conjunto das ações intersetoriais, com metodologias e responsabilidades institucionais definidas.</div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" data-accordion="e4">
+            4. Comunicação, monitoramento e sustentabilidade
+            <span class="accordion-chevron">›</span>
+          </button>
+          <div class="accordion-body"><div class="accordion-body-inner">Comunicação horizontal entre serviços, indicadores de monitoramento e planos de aprimoramento contínuo.</div></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<!-- MODAL DEMO -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <h3>Constituição Federal de 1988, art. 227</h3>
+    <p class="modal-meta">Marco constitucional</p>
+    <p>"É dever da família, da sociedade e do Estado assegurar à criança, ao adolescente e ao jovem, com absoluta prioridade, o direito à vida, à saúde, à alimentação, à educação, ao lazer, à profissionalização, à cultura, à dignidade, ao respeito, à liberdade e à convivência familiar e comunitária, além de colocá-los a salvo de toda forma de fragilidade de vínculos, discriminação, exploração, violência, crueldade e opressão."</p>
+    <button class="modal-close" id="modalClose">Fechar</button>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
