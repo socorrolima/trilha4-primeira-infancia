@@ -21,10 +21,23 @@ abre numa situação específica, encontra a resposta e sai. Por isso:
 
 ## Status atual
 
-Este é o **shell/wireframe** — estrutura de navegação, componentes
-interativos (modal, tooltip, tabs, accordion) e identidade visual
-validados com conteúdo de exemplo. O conteúdo integral das 30 páginas
-ainda não foi todo migrado para os componentes.
+Conteúdo das pp. 14–43 (Seção 1 da Trilha 4) **operacionalizado** nos
+componentes — não é mais placeholder. Durante a migração do texto
+corrigi duas contagens erradas do wireframe inicial:
+
+- O Quadro 1 tem **6 dimensões** de vulnerabilidade/risco, não 4 (faltavam
+  "Exposição a discriminações e preconceitos" e "Risco social e pessoal" —
+  esta última tratada com estilo visualmente sóbrio, sem a cor de destaque
+  das demais, por ser conteúdo sensível).
+- A seção "Como fortalecer a rede" tem **10 requisitos**, não 7.
+
+Cada um dos 6 marcos legais agora abre seu próprio modal (antes só a
+CF/88 estava funcional). O Quadro 2 traz as 3 colunas completas
+(descrição, eixos de integração, resultados esperados) por etapa.
+
+Pendente: revisão de conteúdo pela equipe antes de considerar esta
+parte fechada; infográfico visual (hoje é um grid de stat-cards em
+texto); decisão sobre vídeo de aprofundamento na seção de gênero/raça.
 
 ## Estrutura
 
